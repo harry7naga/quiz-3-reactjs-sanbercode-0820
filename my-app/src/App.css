@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-image: url('./img/pattern.jpg');
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navigation{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link{
+    margin: 0 1rem;
+    font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link a{
+    text-decoration: none;
+    color: #333;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-link a:hover{
+    text-decoration: none;
+    color: gray;
+    transition: color 0.5s ease-in-out;
+}
+
+footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 0;
+    bottom: 0;
+}
+
+.container{
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    min-height: 100vh;
+    border-radius: 4px;
+}
+
+.page-title{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #d0efff;
+    color: #333;
+}
+
+.content-title{
+    margin-bottom: 1rem;
+}
+
+.content-info{
+    display: flex;
+    font-weight: 600;
+}
+
+.content-detail{
+    margin: auto 0 auto 2rem;
+}
+
+.content-image{
+    max-width: 400px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.content-desc{
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.card{
+    width: 50%;
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: #d0efff;
+    border-radius: 4px;
+}
+
+.infos{
+    list-style: none;
+    margin: 0;
+}
+
+.info-item{
+    margin: 0.5rem 0;
+}
+
+.form-control{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 20vh;
+}
+
+.form-input{
+    width: 40vw;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.input{
+    justify-content: space-between;
+}
+
+.button{
+    justify-content: center;
+}
+
+.label-type{
+    font-weight: 700;
+}
+
+.input-type{
+    border: none;
+    height: 24px;
+}
+
+.input-textarea{
+    border: none;
+    height: 10vh;
+    width: 20vw;
+}
+
+.btn{
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #222;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.tbl{
+    border-collapse: collapse;
+    margin: 2rem;
+}
+
+.tbl-head tr th{
+    border-bottom: solid 1px grey;
+    padding: 1rem;
+}
+
+.tbl-body tr td{
+    border-bottom: solid 1px grey;
+    text-align: center;
+    padding: 1rem;
+}
+
+.edit{
+    color: yellow;
+}
+
+.edit:hover{
+    background-color: yellow;
+    color: #333;
+}
+
+.delete{
+    color: salmon;
+}
+
+.delete:hover{
+    background-color: salmon;
+    color: #fff;
 }
